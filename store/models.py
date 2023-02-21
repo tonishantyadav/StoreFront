@@ -102,7 +102,3 @@ class Review(models.Model):
     description = models.TextField()
     date = models.DateField(auto_now_add=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-
-
-class Check(models.Model):
-    pass
