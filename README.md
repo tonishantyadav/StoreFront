@@ -1,2 +1,2 @@
 # StoreFront
-A ecommerce store web app that is made with DRF.
+A RESTful implementation of ecommerce store made with DRF.
