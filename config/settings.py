@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'config',
+        'NAME': 'storefront',
         'HOST': '172.28.128.1',
         'USER': 'wsl_root',
         'PASSWORD': '1234'
