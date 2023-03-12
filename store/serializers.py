@@ -202,7 +202,7 @@ class CreateOrderSerializer(serializers.Serializer):
         if models.CartItem.objects.filter(cart_id=cart_id).count() == 0:
             raise serializers.ValidationError('Cart is empty')
         return cart_id
-
+    
     def save(self, **kwargs):
         with transaction.atomic():
             cart_id = self.validated_data.get('cart_id')
