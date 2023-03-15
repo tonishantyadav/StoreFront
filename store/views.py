@@ -24,6 +24,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     ordering_fields = ['unit_price', 'last_update']
     pagination_class = DefaultPagination
     permission_classes = [IsAdminOrReadOnly]
+    
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)

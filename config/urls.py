@@ -25,6 +25,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path('store/', include('store.urls')),
+    path('', include('play.urls'))
 ]
 
 if settings.DEBUG:

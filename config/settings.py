@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'djoser',
 
     # Local apps
+    'play',
     'likes',
     'tags',
     'store',
@@ -177,3 +178,14 @@ DJOSER = {
         'current_user': 'core.serializers.UserSerializer',
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = '2525'
+DEFAULT_FROM_EMAIL = 'from@nishant.com'
+
+ADMINS = [
+    ('Nishant', 'admin@nishantbuy.com'),
+]
